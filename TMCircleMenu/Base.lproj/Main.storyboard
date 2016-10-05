@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OyU-9A-6A2">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Kwn-yZ-vwR">
+            <objects>
+                <viewController id="OyU-9A-6A2" customClass="ViewController" customModule="TMCircleMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="whH-ku-As9"/>
+                        <viewControllerLayoutGuide type="bottom" id="n0a-y3-qLB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SrU-JJ-Pf3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eOv-Lj-ZUE">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="KRK-Qr-1Pj"/>
+                                    <constraint firstAttribute="height" constant="40" id="LWy-vm-ugn"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uws-ci-x70">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="3EM-7i-h22"/>
+                                    <constraint firstAttribute="height" constant="40" id="lJT-p4-vYh"/>
+                                </constraints>
+                                <state key="normal" title="="/>
+                                <connections>
+                                    <action selector="btnMenuTap:" destination="OyU-9A-6A2" eventType="touchUpInside" id="Cib-je-q1Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRr-YF-iMD">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nOq-VZ-zX9"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnMenuTap:" destination="OyU-9A-6A2" eventType="touchUpInside" id="Gu2-Lc-sj2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bkQ-Iz-9RU">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bHq-yd-BqV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnMenuTap:" destination="OyU-9A-6A2" eventType="touchUpInside" id="iC8-9q-2bu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKU-0T-p2r">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="bhx-20-QAC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnMenuTap:" destination="OyU-9A-6A2" eventType="touchUpInside" id="IR5-Zs-k7z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSM-R3-kIc">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Xch-ZC-OIG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnMenuTap:" destination="OyU-9A-6A2" eventType="touchUpInside" id="jfE-IQ-bIa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dSM-R3-kIc" secondAttribute="trailing" constant="20" id="0dU-uz-tNu"/>
+                            <constraint firstAttribute="trailing" secondItem="eOv-Lj-ZUE" secondAttribute="trailing" constant="20" id="6iO-4M-CGn"/>
+                            <constraint firstItem="TKU-0T-p2r" firstAttribute="top" secondItem="bkQ-Iz-9RU" secondAttribute="bottom" constant="24" id="MKW-MZ-JUc"/>
+                            <constraint firstAttribute="trailing" secondItem="hRr-YF-iMD" secondAttribute="trailing" constant="20" id="SD7-tY-ANL"/>
+                            <constraint firstItem="bkQ-Iz-9RU" firstAttribute="leading" secondItem="SrU-JJ-Pf3" secondAttribute="leading" constant="20" id="SmA-8A-YlD"/>
+                            <constraint firstItem="bkQ-Iz-9RU" firstAttribute="top" secondItem="hRr-YF-iMD" secondAttribute="bottom" constant="22" id="Uog-Io-y6X"/>
+                            <constraint firstItem="dSM-R3-kIc" firstAttribute="leading" secondItem="SrU-JJ-Pf3" secondAttribute="leading" constant="20" id="Vnl-Zx-8Dp"/>
+                            <constraint firstAttribute="trailing" secondItem="Uws-ci-x70" secondAttribute="trailing" constant="20" id="XLi-zH-Sef"/>
+                            <constraint firstItem="hRr-YF-iMD" firstAttribute="top" secondItem="Uws-ci-x70" secondAttribute="bottom" constant="32" id="Ybe-GR-bY0"/>
+                            <constraint firstItem="TKU-0T-p2r" firstAttribute="leading" secondItem="SrU-JJ-Pf3" secondAttribute="leading" constant="20" id="Yer-p7-nde"/>
+                            <constraint firstItem="dSM-R3-kIc" firstAttribute="top" secondItem="TKU-0T-p2r" secondAttribute="bottom" constant="23" id="fOs-SR-a2m"/>
+                            <constraint firstAttribute="trailing" secondItem="bkQ-Iz-9RU" secondAttribute="trailing" constant="20" id="h2N-ej-FKO"/>
+                            <constraint firstAttribute="trailing" secondItem="TKU-0T-p2r" secondAttribute="trailing" constant="20" id="k18-c4-iYG"/>
+                            <constraint firstItem="hRr-YF-iMD" firstAttribute="leading" secondItem="SrU-JJ-Pf3" secondAttribute="leading" constant="20" id="l3m-8x-Pue"/>
+                            <constraint firstItem="eOv-Lj-ZUE" firstAttribute="top" secondItem="whH-ku-As9" secondAttribute="bottom" constant="20" id="npA-Et-ir2"/>
+                            <constraint firstItem="Uws-ci-x70" firstAttribute="top" secondItem="whH-ku-As9" secondAttribute="bottom" constant="20" id="vuP-Mz-TaW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnMenu" destination="Uws-ci-x70" id="E1q-Xm-rFs"/>
+                        <outlet property="constraintViewMenuHeight" destination="LWy-vm-ugn" id="nN1-gS-B2P"/>
+                        <outlet property="constraintViewMenuTop" destination="npA-Et-ir2" id="qNF-W4-Wnl"/>
+                        <outlet property="constraintViewMenuTrailing" destination="6iO-4M-CGn" id="XQB-Sr-HAP"/>
+                        <outlet property="constraintViewMenuWidth" destination="KRK-Qr-1Pj" id="DKv-Bu-Fz4"/>
+                        <outlet property="menuView" destination="eOv-Lj-ZUE" id="Ley-x5-dGy"/>
+                        <outletCollection property="buttons" destination="hRr-YF-iMD" collectionClass="NSMutableArray" id="r2j-q5-jfX"/>
+                        <outletCollection property="buttons" destination="bkQ-Iz-9RU" collectionClass="NSMutableArray" id="KWw-cb-0GF"/>
+                        <outletCollection property="buttons" destination="TKU-0T-p2r" collectionClass="NSMutableArray" id="6gR-CP-wxh"/>
+                        <outletCollection property="buttons" destination="dSM-R3-kIc" collectionClass="NSMutableArray" id="6BE-W3-tD9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rFH-dY-Nly" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="844" y="124"/>
+        </scene>
+    </scenes>
+</document>
